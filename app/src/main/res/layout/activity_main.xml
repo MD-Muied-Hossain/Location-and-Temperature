@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
+    tools:context="com.muiedhossain.LocationAndTemperature.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:hint="Temp"></TextView>
+    <!--<TextView
+        android:id="@+id/tv2"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:hint="Wind"></TextView>-->
+
+    <EditText
+        android:id="@+id/et"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your city name"
+        android:textColorHint="@color/white"
+        android:gravity="center"
+        android:minHeight="48dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Check Weather"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#FF9800"
+        android:onClick="getWeather"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"></Button>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:textSize="16sp"
+        android:textColor="#85FFFFFF"
+        android:textStyle="bold"
+        android:text="If You Need To Know Your Location"></TextView>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="My Location"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:backgroundTint="#FF9800"
+        android:onClick="myLocation"
+        android:textSize="16sp"></Button>
+
+</LinearLayout>
